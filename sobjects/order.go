@@ -3,6 +3,7 @@ package sobjects
 type Order struct {
 	BaseSObject
 	AccountID     string  `force:",omitempty"`
+	EffectiveDate string  `force:",omitempty"`
 	AccountNumber string  `force:",omitempty"`
 	ContractID    string  `force:",omitempty"`
 	CreatedDate   string  `force:",omitempty"`
