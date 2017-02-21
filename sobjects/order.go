@@ -8,6 +8,7 @@ type Order struct {
 	CreatedDate   string  `force:",omitempty"`
 	OrderNumber   string  `force:",omitempty"`
 	IsDeleted     bool    `force:",omitempty"`
+	Status        string  `force:",omitempty"`
 	TotalAmount   float64 `force:",omitempty"`
 }
 

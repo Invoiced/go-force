@@ -14,3 +14,8 @@ type Account struct {
 func (a Account) ApiName() string {
 	return "Account"
 }
+
+type AccountQueryResponse struct {
+	BaseQuery
+	Records []Account `json:"Records" force:"records"`
+}
