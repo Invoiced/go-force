@@ -11,6 +11,7 @@ type Order struct {
 	IsDeleted     bool    `force:",omitempty"`
 	Status        string  `force:",omitempty"`
 	TotalAmount   float64 `force:",omitempty"`
+	OpportunityId string  `force:",omitempty"`
 }
 
 func (t *Order) ApiName() string {

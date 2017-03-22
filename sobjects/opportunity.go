@@ -15,6 +15,7 @@ type Opportunity struct {
 	Name            string  `force:",omitempty"`
 	OwnerId         string  `force:",omitempty"`
 	StageName       string  `force:",omitempty"`
+	OrderNumber     string  `force:"OrderNumber__c,omitempty"`
 }
 
 func (t *Opportunity) ApiName() string {
